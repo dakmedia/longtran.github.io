@@ -2,7 +2,7 @@
 - GUI
 - Powershell
 
-#### GUI
+#### Add a UPN Suffix via GUI
 Step 1:  **Server Manager**, selete menu **Tools**, choose **Active Directory Domains and Trusts**
 ![](images/image1.jpg)
 Step 2:  **Active Directory Domains and Trusts** right click choose **Properties**
@@ -12,7 +12,7 @@ Step 3: Type *UPN suffix* domain in Alternative UPN suffixes:
 Step 4: Then **Apply**, **OK**.
 ![](images/image4.jpg)
 
-#### Powershell
+#### Add a UPN Suffix via Powershell
 Step 1: Run as Administrator, and type command:
                     
 > Set-ADForest -Identity cpehcm.com -UPNSuffixes @{Add="cpehcm.biz"}
