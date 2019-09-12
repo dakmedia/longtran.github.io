@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+### How to create a UPN Suffix on Active Directory
+- GUI
+- Powershell
 
-You can use the [editor on GitHub](https://github.com/dakmedia/longtran.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+#### GUI
+Step 1:  **Server Manager**, selete menu **Tools**, choose **Active Directory Domains and Trusts**
+![](images/image1.jpg)
+Step 2:  **Active Directory Domains and Trusts** right click choose **Properties**
+![](images/image2.jpg)
+Step 3: Type *UPN suffix* domain in Alternative UPN suffixes:
+![](images/image3.jpg)
+Step 4: Then **Apply**, **OK**.
+![](images/image4.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dakmedia/longtran.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### Powershell
+Step 1: Run as Administrator, and type command:
+                    
+> Set-ADForest -Identity cpehcm.com -UPNSuffixes @{Add="cpehcm.biz"}
+                    
+![](images/image5.jpg)
+Step 2: List all UPN suffixes domain via Powershell command:
+                    
+>Get-ADForest | fl UPNSuffixes
+                    
+![](images/image6.jpg)
+Step 3: Change all users to new UPN suffix domain via Powershell, for example:
+                    
+>Get-ADForest | Set-ADForest -UPNSuffixes @{add="cpehcm.biz"}
+                    
+![](images/image6.jpg)
+Step 4: Change all users to new UPN suffix domain via GUI:
+![](images/image7.jpg)
