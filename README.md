@@ -36,17 +36,17 @@ Step 4: Then **Apply**, **OK**.
 #### Create a UPN Suffix via Powershell
 Step 1: Run as Administrator, and type command:
 ```sh
-> Set-ADForest -Identity cpehcm.com -UPNSuffixes @{Add="cpehcm.biz"}
+Set-ADForest -Identity cpehcm.com -UPNSuffixes @{Add="cpehcm.biz"}
 ```
 ![](images/image5.jpg)
 Step 2: List all UPN suffixes domain via Powershell command:
 ```sh
->Get-ADForest | fl UPNSuffixes
+Get-ADForest | fl UPNSuffixes
 ```
 ![](images/image6.jpg)
 Step 3: Change all users to new UPN suffix domain via Powershell, for example:
 ```sh
->Get-ADForest | Set-ADForest -UPNSuffixes @{add="cpehcm.biz"}
+Get-ADForest | Set-ADForest -UPNSuffixes @{add="cpehcm.biz"}
 ```
 ![](images/image6.jpg)
 Step 4: Change all users to new UPN suffix domain via GUI:
