@@ -14,6 +14,13 @@
 ## Microsoft experience
 ### [Create a UPN Suffix with GUI and Powershell](#Howtocreat_a_AUPNSuffix_on_ActiveDirectory)
 
+# INFORMATIONS
+
+<a name="Howtocreat_a_AUPNSuffix_on_ActiveDirectory"></a>
+### [How to create a UPN Suffix on Active Directory](https://github.com/dakmedia/longtran.github.io/blob/master/Add-UPN-Suffix.md)
+- [Create a UPN Suffix via GUI](#GUIUPN)
+- [Create a UPN Suffix via Powershell](#PSGUI)
+
 <a name="GUIUPN"></a>
 #### Create a UPN Suffix via GUI
 Step 1:  **Server Manager**, selete menu **Tools**, choose **Active Directory Domains and Trusts**
@@ -200,8 +207,3 @@ Step 4: Change all users to new UPN suffix domain via GUI:
 ### Read more: 
 - [Exam AZ-103: Microsoft Azure Administrator](https://www.microsoft.com/en-us/learning/exam-az-103.aspx)
 - [Microsoft Certified: Azure Administrator Associate](https://www.microsoft.com/en-us/learning/azure-administrator.aspx)
-
-<a name="Howtocreat_a_AUPNSuffix_on_ActiveDirectory"></a>
-### [How to create a UPN Suffix on Active Directory](https://github.com/dakmedia/longtran.github.io/blob/master/Add-UPN-Suffix.md)
-- [Create a UPN Suffix via GUI](#GUIUPN)
-- [Create a UPN Suffix via Powershell](#PSGUI)
