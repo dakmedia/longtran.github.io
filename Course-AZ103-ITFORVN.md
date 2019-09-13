@@ -1,5 +1,7 @@
 ##AZ-103: Microsoft Azure Administrator
+
 ![](images/az-103/azure-administrator-associate.png)
+
 ###I. Manage Azure Subscriptions and Resources
 ####1. Manage Azure Subscriptions
 - Azure Deployment Models
