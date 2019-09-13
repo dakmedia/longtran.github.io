@@ -14,7 +14,7 @@
 ## Microsoft experience
 ### [Create a UPN Suffix with GUI and Powershell](#Howtocreat_a_AUPNSuffix_on_ActiveDirectory)
 
-# INFORMATIONS
+# POSTS INFORMATIONS
 
 <a name="Howtocreat_a_AUPNSuffix_on_ActiveDirectory"></a>
 ### [How to create a UPN Suffix on Active Directory](https://github.com/dakmedia/longtran.github.io/blob/master/Add-UPN-Suffix.md)
