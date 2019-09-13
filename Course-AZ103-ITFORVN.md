@@ -2,14 +2,14 @@
 
 ![](images/az-103/azure-administrator-associate.png)
 
-###I. Manage Azure Subscriptions and Resources
-####1. Manage Azure Subscriptions
+###Manage Azure Subscriptions and Resources
+####Manage Azure Subscriptions
 - Azure Deployment Models
 - Assign Administrator Permissions
 - Configure Cost Center Quotas and Tagging
 - Configure Subscription Policies
 
-####2. Analyze Azure Utilization And Consumption
+####Analyze Azure Utilization And Consumption
 - Configure diagnostic settings on resources
 - Create action groups
 - Create and test alerts
@@ -18,18 +18,18 @@
 - View alerts in Log Analytics
 - Spending
 
-####3. Manage Resource Groups
+####Manage Resource Groups
 - Configure resource locks
 - Move resources across resource groups
 - Remove resource groups
 - Lab - Azure Policies
 
-####4. Manage Role - Based Access Control (RBAC)
+####Manage Role - Based Access Control (RBAC)
 - Lab - Role Based Access Control
 - Lab - Custom Roles
 
-###II. Implement And Manage Storage
-####1. Create and Configure Storage accounts
+###Implement And Manage Storage
+####Create and Configure Storage accounts
 - Create and configure storage account
 - Configure network access to the storage account
 - Generate shared access signature
@@ -38,14 +38,14 @@
 - Implement Azure storage replication
 - Lab - Activity Logs
 
-####2. Import and Export Data to Azure
+####Import and Export Data to Azure
 - Create export from Azure job
 - Create import from Azure job
 - Configure and use Azure blob storage
 - Configure Azure content delivery network (CDN) endpoints
 - Azure Data Box
 
-####3. Configure Azure Files
+####Configure Azure Files
 - Create Azure file share
 - Create Azure File Sync service
 - Troubleshoot Azure File Sync
@@ -57,8 +57,8 @@
 - Create and configure backup policy
 - Perform a restore operation
 
-###III. Deploy And Manage Virtual Machine
-####1. Create and Configure a VM for Windows and Linux
+###Deploy And Manage Virtual Machine
+####Create and Configure a VM for Windows and Linux
 - Create and Configure a Windows VM
 - Configuring Monitoring, Networking, Storage and Virtual Machine size
 - Configure Storage
@@ -67,12 +67,12 @@
 - Deploy and Configure Scale Sets
 - Lab - Building a Linux Virtual Machine
 
-####2. Automate Deployment of Virtual Machine
+####Automate Deployment of Virtual Machine
 - Modify Azure Resource Manager(ARM) Template
 - Deploy Windows and Linux VM's
 - Save a Deployment As An ARM template
 
-####3. Manage Azure VM
+####Manage Azure VM
 - Add Data Discs
 - Add network interfaces
 - Automate configuration management by using PowerShell Desired State Configuration (DSC)
@@ -80,41 +80,41 @@
 - Move VMs from one resource group to another
 - Redeploy VMs
 
-####4. Manage VM Backups
--Lab - Restore VM
+####Manage VM Backups
+- Lab - Restore VM
 
-####5. Configure and Manage Virtual Networks
+####Configure and Manage Virtual Networks
 Create Connectivity Between Virtual Networks
 - Create and configure VNET to VNET
 - Create and configure VNET peering
 
-####6. Implement and Manage Virtual Networking
+####Implement and Manage Virtual Networking
 - Configure private and public IP addresses
 - Configure network routes
 - Configure Network Interface
 - Configure subnets, and virtual network
 
-####7. Configure Name Resolution
+####Configure Name Resolution
 - Configure Private DNS Zones
 - Lab - Azure DNS
 
-####8. Create and Configure a Network Security Group
+####Create and Configure a Network Security Group
 - Create Network Security Group and Security Rules
 
-####9. Implement Azure Load Balancer
+####Implement Azure Load Balancer
 - Azure Load Balancer
 - Lab - Azure Load Balancer
 
-####10. Monitor and Troubleshoot Virtual Networking
+####Monitor and Troubleshoot Virtual Networking
 - Network Watcher
 - Lab - Azure Network Watcher
 
-####11. Integrate On Premises network with Azure Virtual Network
+####Integrate On Premises network with Azure Virtual Network
 - Hybrid Connections
 - Lab - Point to Site VPN
 
-###IV. Manage Identities
-####1. Manage Azure Active Directory
+###Manage Identities
+####Manage Azure Active Directory
 - Overview of Azure AD
 - Add custom domains
 - Configure Azure AD Identity Protection
@@ -124,18 +124,18 @@ Create Connectivity Between Virtual Networks
 - Perform Access Review
 - Managed multiple directories
 
-####2. Manage Azure AD Objects (Users,Groups and Devices)
+####Manage Azure AD Objects (Users,Groups and Devices)
 - Create users and groups
 - Manage User and Group Properties
 - Manage Device Settings
 - Perform Bulk User Updates
 
-####3. Implement and Manage Hybrid Identities
+####Implement and Manage Hybrid Identities
 - Install and configure Azure AD Connect
 - Configure Federation and Single Sign-On
 - Manage password sync and writeback
 
-###V. Lab Excercises (for you to get a certificate)
+###Lab Excercises (for you to get a certificate)
 - Lab - Availability sets
 - Lab - Azure DNS
 - Lab - Load Balancer - SLA
@@ -150,5 +150,7 @@ Create Connectivity Between Virtual Networks
 - Lab - Virtual Network Connectivity - Troubleshooting
 
 ###Read more: 
-[Exam AZ-103: Microsoft Azure Administrator](https://www.microsoft.com/en-us/learning/exam-az-103.aspx) 
-[Microsoft Certified: Azure Administrator Associate](https://www.microsoft.com/en-us/learning/azure-administrator.aspx) 
+
+[Exam AZ-103: Microsoft Azure Administrator](https://www.microsoft.com/en-us/learning/exam-az-103.aspx)
+
+[Microsoft Certified: Azure Administrator Associate](https://www.microsoft.com/en-us/learning/azure-administrator.aspx)
