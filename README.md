@@ -12,7 +12,38 @@
 - Microsoft Certified Professional (MCP)
 
 ## Microsoft experience
-### Create a [UPN Suffix with GUI and Powershell](#Howtocreat_a_AUPNSuffix_on_ActiveDirectory)
+### [Create a UPN Suffix with GUI and Powershell](#Howtocreat_a_AUPNSuffix_on_ActiveDirectory)
+
+<a name="GUIUPN"></a>
+#### Create a UPN Suffix via GUI
+Step 1:  **Server Manager**, selete menu **Tools**, choose **Active Directory Domains and Trusts**
+![](images/image1.jpg)
+Step 2:  **Active Directory Domains and Trusts** right click choose **Properties**
+![](images/image2.jpg)
+Step 3: Type *UPN suffix* domain in Alternative UPN suffixes:
+![](images/image3.jpg)
+Step 4: Then **Apply**, **OK**.
+![](images/image4.jpg)
+
+<a name="PSUPN"></a>
+#### Create a UPN Suffix via Powershell
+Step 1: Run as Administrator, and type command:
+```sh
+> Set-ADForest -Identity cpehcm.com -UPNSuffixes @{Add="cpehcm.biz"}
+```
+![](images/image5.jpg)
+Step 2: List all UPN suffixes domain via Powershell command:
+```sh
+>Get-ADForest | fl UPNSuffixes
+```
+![](images/image6.jpg)
+Step 3: Change all users to new UPN suffix domain via Powershell, for example:
+```sh
+>Get-ADForest | Set-ADForest -UPNSuffixes @{add="cpehcm.biz"}
+```
+![](images/image6.jpg)
+Step 4: Change all users to new UPN suffix domain via GUI:
+![](images/image7.jpg)
 
 <a name="MicrosoftAzureAdministrator"></a>
 ## [AZ-103: Microsoft Azure Administrator](https://github.com/dakmedia/longtran.github.io/blob/master/Couse-Az103-ITFORVN.md)
@@ -172,34 +203,5 @@
 
 <a name="Howtocreat_a_AUPNSuffix_on_ActiveDirectory"></a>
 ### [How to create a UPN Suffix on Active Directory](https://github.com/dakmedia/longtran.github.io/blob/master/Add-UPN-Suffix.md)
-- GUI
-- Powershell
-
-#### GUI
-Step 1:  **Server Manager**, selete menu **Tools**, choose **Active Directory Domains and Trusts**
-![](images/image1.jpg)
-Step 2:  **Active Directory Domains and Trusts** right click choose **Properties**
-![](images/image2.jpg)
-Step 3: Type *UPN suffix* domain in Alternative UPN suffixes:
-![](images/image3.jpg)
-Step 4: Then **Apply**, **OK**.
-![](images/image4.jpg)
-
-#### Powershell
-Step 1: Run as Administrator, and type command:
-```sh
-> Set-ADForest -Identity cpehcm.com -UPNSuffixes @{Add="cpehcm.biz"}
-```
-![](images/image5.jpg)
-Step 2: List all UPN suffixes domain via Powershell command:
-```sh
->Get-ADForest | fl UPNSuffixes
-```
-![](images/image6.jpg)
-Step 3: Change all users to new UPN suffix domain via Powershell, for example:
-```sh
->Get-ADForest | Set-ADForest -UPNSuffixes @{add="cpehcm.biz"}
-```
-![](images/image6.jpg)
-Step 4: Change all users to new UPN suffix domain via GUI:
-![](images/image7.jpg)
+- [Create a UPN Suffix via GUI](#GUIUPN)
+- [Create a UPN Suffix via Powershell](#PSGUI)
